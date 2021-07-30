@@ -14,7 +14,7 @@ __Importing and Exporting__
     # Writes to a text file
     np.savetxt('file.txt',arr,delimiter=' ')
 
-__Creating Arrays__
+**Creating Arrays**
 
     # One dimensional array
     np.array([1,2,3])
@@ -38,3 +38,23 @@ __Creating Arrays__
     np.random.rand(6,7)*100
     # 2x3 array with random ints between 0-4
     np.random.randint(5,size=(2,3))
+
+__Ispecting Properties__
+
+arr.size - Returns number of elements in arr
+arr.shape - Returns dimensions of arr (rows,
+columns)
+arr.dtype - Returns type of elements in arr
+arr.astype(dtype) - Convert arr elements to
+type dtype
+arr.tolist() - Convert arr to a Python list
+np.info(np.eye) - View documentation for
+np.eye
+COPYING/SORTING/RESHAPING
+np.copy(arr) - Copies arr to new memory
+arr.view(dtype) - Creates view of arr elements
+with type dtype
+arr.sort() - Sorts arr
+arr.sort(axis=0) - Sorts specific axis of arr
+two_d_arr.flatten() - Flattens 2D array
+two_d_arr to 1D
