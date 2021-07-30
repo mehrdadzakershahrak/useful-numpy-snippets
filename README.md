@@ -55,6 +55,7 @@ __Ispecting Properties__
     np.info(np.eye)
 
 __Copying/Sorting/Reshaping__
+
     # Copies arr to new memory
     np.copy(arr)
     # Creates view of arr elements with type dtype
