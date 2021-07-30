@@ -113,8 +113,10 @@ __Indexing/Slicing/Subsetting__
     arr[:2]
     # Returns the elements at index 1 on all rows
     arr[:,1]
-    # Returns an array with boolean values (arr1<3) & (arr2>5)
+    # Returns an array with boolean values 
     arr<5
+    #  Returns an array with boolean values
+    (arr1<3) & (arr2>5)
     # Inverts a boolean array
     ~arr
     # Returns array elements smaller than 5
