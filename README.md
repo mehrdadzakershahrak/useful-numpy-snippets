@@ -41,20 +41,28 @@ __Importing and Exporting__
 
 __Ispecting Properties__
 
-arr.size - Returns number of elements in arr
-arr.shape - Returns dimensions of arr (rows,
-columns)
-arr.dtype - Returns type of elements in arr
-arr.astype(dtype) - Convert arr elements to
-type dtype
-arr.tolist() - Convert arr to a Python list
-np.info(np.eye) - View documentation for
-np.eye
-COPYING/SORTING/RESHAPING
-np.copy(arr) - Copies arr to new memory
-arr.view(dtype) - Creates view of arr elements
-with type dtype
-arr.sort() - Sorts arr
-arr.sort(axis=0) - Sorts specific axis of arr
-two_d_arr.flatten() - Flattens 2D array
-two_d_arr to 1D
+    # Returns number of elements in arr
+    arr.size
+    # Returns dimensions of arr (rows, columns)
+    arr.shape
+    # Returns type of elements in arr
+    arr.dtype
+    # Convert arr elements to type dtype
+    arr.astype(dtype)
+    # Convert arr to a Python list
+    arr.tolist()
+    # View documentation for np.eye
+    np.info(np.eye)
+
+__Copying/Sorting/Reshaping__
+    # Copies arr to new memory
+    np.copy(arr)
+    # Creates view of arr elements with type dtype
+    arr.view(dtype)
+    # Sorts arr
+    arr.sort()
+    # Sorts specific axis of arr
+    arr.sort(axis=0)
+    # Flattens 2D array two_d_arr to 1D
+    two_d_arr.flatten()
+
