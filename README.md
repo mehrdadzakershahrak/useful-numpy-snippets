@@ -66,4 +66,56 @@ __Copying/Sorting/Reshaping__
     arr.sort(axis=0)
     # Flattens 2D array two_d_arr to 1D
     two_d_arr.flatten()
+    # Transposes arr (rows become columns and vice versa)
+    arr.T
+    # Reshapes arr to 3 rows, 4 columns without changing data
+    arr.reshape(3,4) 
+    # Changes arr shape to 5x6 and fills new values with 0
+    arr.resize((5,6))
 
+__Adding/Removing Elements__
+
+    # Appends values to end of arr
+    np.append(arr,values)
+    # Inserts values into arr before index 2
+    np.insert(arr,2,values)
+    # Deletes row on index 3 of arr
+    np.delete(arr,3,axis=0)
+    # Deletes column on index 4 of arr
+    np.delete(arr,4,axis=1)
+
+__Combining/Slitting__
+
+    # Adds arr2 as rows to the end of arr1
+    np.concatenate((arr1,arr2),axis=0)
+    # Adds arr2 as columns to end of arr1
+    np.concatenate((arr1,arr2),axis=1)
+    # Splits arr into 3 sub-arrays
+    np.split(arr,3)
+    # Splits arr horizontally on the 5th index
+    np.hsplit(arr,5)
+
+__Indexing/Slicing/Subsetting__
+
+    # Returns the element at index 5
+    arr[5]
+    # Returns the 2D array element on index[2][5]
+    arr[2,5]
+    # Assigns array element on index 1 the value 4
+    arr[1]=4
+    # Assigns array element on index[1][3] the value 10
+    arr[1,3]=10
+    # Returns the elements at indices 0,1,2 (On a 2D array: returns rows 0,1,2)
+    arr[0:3]
+    # Returns the elements on rows 0,1,2 at column 4
+    arr[0:3,4]
+    # Returns the elements at indices 0,1 (On a 2D array: returns rows 0,1)
+    arr[:2]
+    # Returns the elements at index 1 on all rows
+    arr[:,1]
+    # Returns an array with boolean values (arr1<3) & (arr2>5)
+    arr<5
+    # Inverts a boolean array
+    ~arr
+    # Returns array elements smaller than 5
+    arr[arr<5]
