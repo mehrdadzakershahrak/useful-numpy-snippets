@@ -121,3 +121,62 @@ __Indexing/Slicing/Subsetting__
     ~arr
     # Returns array elements smaller than 5
     arr[arr<5]
+
+__Scalar Mathematics__
+
+    # Add 1 to each array element
+    np.add(arr,1)
+    # Subtract 2 from each array element
+    np.subtract(arr,2)
+    # Multiply each array element by 3
+    np.multiply(arr,3)
+    # Divide each array element by 4 (returns np.nan for division by zero)
+    np.divide(arr,4)
+    # Raise each array element to the 5th power
+    np.power(arr,5)
+
+__Vector Mathematics__
+
+    # Elementwise add arr2 to arr1
+    np.add(arr1,arr2)
+    # Elementwise subtract arr2 from arr1
+    np.subtract(arr1,arr2)
+    # Elementwise multiply arr1 by arr2
+    np.multiply(arr1,arr2)
+    # Elementwise divide arr1 by arr2
+    np.divide(arr1,arr2)
+    # Elementwise raise arr1 raised to the power of arr2
+    np.power(arr1,arr2)
+    # Returns True if the arrays have the same elements and shape
+    np.array_equal(arr1,arr2)
+    # Square root of each element in the array
+    np.sqrt(arr)
+    # Sine of each element in the array
+    np.sin(arr)
+    # Natural log of each element in the array
+    np.log(arr)
+    # Absolute value of each element in the array
+    np.abs(arr)
+    # Rounds up to the nearest int
+    np.ceil(arr)
+    # Rounds down to the nearest int
+    np.floor(arr)
+    # Rounds to the nearest int
+    np.round(arr)
+
+__Statistics__
+
+    # Returns mean along specific axis
+    np.mean(arr,axis=0)
+    # Returns sum of arr
+    arr.sum()
+    # Returns minimum value of arr
+    arr.min()
+    # Returns maximum value of specific axis
+    arr.max(axis=0)
+    # Returns the variance of array
+    np.var(arr)
+    # Returns the standard deviation of specific axis
+    np.std(arr,axis=1)
+    # Returns correlation coefficient of array
+    arr.corrcoef()
