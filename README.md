@@ -139,28 +139,40 @@ __Vector Mathematics__
 
     # Elementwise add arr2 to arr1
     np.add(arr1,arr2)
+
     # Elementwise subtract arr2 from arr1
     np.subtract(arr1,arr2)
+
     # Elementwise multiply arr1 by arr2
     np.multiply(arr1,arr2)
+
     # Elementwise divide arr1 by arr2
     np.divide(arr1,arr2)
+
     # Elementwise raise arr1 raised to the power of arr2
     np.power(arr1,arr2)
+
     # Returns True if the arrays have the same elements and shape
     np.array_equal(arr1,arr2)
+
     # Square root of each element in the array
     np.sqrt(arr)
+
     # Sine of each element in the array
     np.sin(arr)
+
     # Natural log of each element in the array
     np.log(arr)
+
     # Absolute value of each element in the array
     np.abs(arr)
+
     # Rounds up to the nearest int
     np.ceil(arr)
+
     # Rounds down to the nearest int
     np.floor(arr)
+    
     # Rounds to the nearest int
     np.round(arr)
 
